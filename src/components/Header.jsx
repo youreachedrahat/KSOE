@@ -56,9 +56,9 @@ function Header(props) {
  
 <div className=''>
     <div class="hidden w-full md:block md:w-auto " id="navbar-default">
-      <ul className="flex flex-row gap-10 font-serif">
+      <ul className="flex flex-row gap-10 md:gap-4 md:font-sm font-serif">
         <li>
-          <a href="#" className="text-2xl font-bold bg-transparent hover:text-blue-500 " aria-current="page">Home</a>
+          <a href="#" className="text-2xl font-bold bg-transparent block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">Home</a>
         </li>
         <li>
           <a href="#" class="text-2xl font-bold bg-transparent block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
@@ -69,9 +69,22 @@ function Header(props) {
         <li>
           <a href="#" class="text-2xl font-bold bg-transparent block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">NAAC</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#" class="text-2xl font-bold bg-transparent block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Department</a>
-        </li>
+        </li> */}
+        <li class="relative group">
+    <a href="#" class="text-2xl font-bold bg-transparent block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >
+        Department 
+    </a>
+    <ul class="absolute hidden bg-white shadow-md mt-2 py-2 w-40 rounded-md group-hover:block">
+        <li><a href="#" class=" px-4 py-2 text-gray-800 hover:bg-gray-200 bg-green-300 flex items-center justify-center">Computer</a></li>
+        <li><a href="#" class=" px-4 py-2 text-gray-800 hover:bg-gray-200 bg-green-300 flex items-center justify-center">EnTC</a></li>
+        <li><a href="#" class=" px-4 py-2 text-gray-800 hover:bg-gray-200 bg-green-300 flex items-center justify-center">Mechanical</a></li>
+        <li><a href="#" class=" px-4 py-2 text-gray-800 hover:bg-gray-200 bg-green-300 flex items-center justify-center">AIML</a></li>
+    </ul>
+</li>
+
+
         <li>
           <a href="#" class="text-2xl font-bold bg-transparent block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Addmission</a>
         </li>
